@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains eu_funding.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function eu_funding_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the eu_funding module.
+    case 'help.page.eu_funding':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('EU funding banner and disclaimer blocks') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function eu_funding_theme() {
+  return [
+    'eu_funding' => [
+      'render element' => 'children',
+    ],
+  ];
+}
