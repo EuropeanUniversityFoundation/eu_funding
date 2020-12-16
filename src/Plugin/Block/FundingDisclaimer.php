@@ -20,7 +20,9 @@ class FundingDisclaimer extends BlockBase {
    */
   public function build() {
     return [
+      '#prefix' => '<div class="eu-funding eu-funding-text">',
       '#markup' => $this->t('This project has been funded with the support from the European Commission. The website reflects the views only of the author, and the Commission cannot be held responsible for any use which may be made of the information contained therein.'),
+      '#suffix' => '</div>',
     ];
   }
 
