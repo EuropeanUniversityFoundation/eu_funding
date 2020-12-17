@@ -31,5 +31,8 @@ function eu_funding_theme() {
     'eu_funding_banner' => [
       'variables' => ['banner' => NULL, 'alttext' => NULL],
     ],
+    'eu_funding_text' => [
+      'variables' => ['text' => NULL],
+    ],
   ];
 }
