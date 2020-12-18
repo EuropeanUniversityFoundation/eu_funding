@@ -3,3 +3,5 @@ type: module
 description: 'EU funding banner and disclaimer blocks'
 core: 8.x
 package: 'Other'
+dependencies:
+  - drupal:block
