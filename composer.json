@@ -1,5 +1,5 @@
 {
-    "name": "eu_funding",
+    "name": "euf/eu_funding",
     "type": "drupal-module",
     "description": "EU funding banner and disclaimer blocks",
     "keywords": [
@@ -7,7 +7,7 @@
     "homepage": "https://github.com/EuropeanUniversityFoundation/eu_funding",
     "minimum-stability": "dev",
     "support": {
-        "issues": "https://github.com/EuropeanUniversityFoundation/eu_funding",
-        "source": "http://github.com/EuropeanUniversityFoundation/eu_funding"
+        "issues": "https://github.com/EuropeanUniversityFoundation/eu_funding/issues ",
+        "source": "https://github.com/EuropeanUniversityFoundation/eu_funding"
     }
 }
