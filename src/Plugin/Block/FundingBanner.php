@@ -23,7 +23,7 @@ class FundingBanner extends BlockBase {
     $module_handler = \Drupal::service('module_handler');
     $module_path = $module_handler->getModule('eu_funding')->getPath();
 
-    $banner_dir = $module_path . '/img';
+    $banner_dir = '/' . $module_path . '/img';
 
     $banner_default = 'eu_flag_co_funded.png';
     $banner_high_contrast = 'eu_flag_co_funded_hc.png';
