@@ -2,18 +2,19 @@
 
 namespace Drupal\eu_funding\Plugin\Block;
 
+use Drupal\Core\Block\Attribute\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
- * Provides a block with the EU funding banner
- *
- * @Block(
- *   id = "eu_funding_banner",
- *   admin_label = @Translation("EU funding banner"),
- *   category = @Translation("EU funding"),
- * )
+ * Provides a block with the EU funding banner.
  */
+#[Block(
+  id: 'eu_funding_banner',
+  admin_label: new TranslatableMarkup("EU funding banner"),
+  category: new TranslatableMarkup("EU funding"),
+)]
 class FundingBanner extends BlockBase {
 
   /**
@@ -52,7 +53,7 @@ class FundingBanner extends BlockBase {
     $form['high_contrast'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('High contrast'),
-      '#description' => $this->t('Check this option is the banner will be placed over a dark background.'),
+      '#description' => $this->t('Check this option if the banner will be placed over a dark background.'),
       '#default_value' => isset($this->configuration['high_contrast']) ? $this->configuration['high_contrast'] : 0,
       '#return_value' => 1,
     ];

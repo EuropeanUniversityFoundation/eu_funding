@@ -2,17 +2,18 @@
 
 namespace Drupal\eu_funding\Plugin\Block;
 
+use Drupal\Core\Block\Attribute\Block;
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
- * Provides a block with the EU funding disclaimer
- *
- * @Block(
- *   id = "eu_funding_disclaimer",
- *   admin_label = @Translation("EU funding disclaimer"),
- *   category = @Translation("EU funding"),
- * )
+ * Provides a block with the EU funding disclaimer.
  */
+#[Block(
+  id: 'eu_funding_disclaimer',
+  admin_label: new TranslatableMarkup("EU funding disclaimer"),
+  category: new TranslatableMarkup("EU funding"),
+)]
 class FundingDisclaimer extends BlockBase {
 
   /**
